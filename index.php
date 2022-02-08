@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="js/bootstrap.js"></script>
+    <title>Muhammad Anandha Fritama</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .navbar-brand:hover{
+          font-weight: bold;
+          color: darkslateblue !important;
+      }
+      .nav-atas:hover{
+        color: darkslateblue !important;
+        font-weight: 300;
+      }
+      #konten{
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        background: #D1D8EC;
+        -webkit-box-shadow: 10px 10px 24px #b2b8c9, -10px -10px 24px #f0f8ff;
+        box-shadow: 10px 10px 24px #b2b8c9, -10px -10px 24px #f0f8ff;
+      }
+      #samping{
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        background: #D1D8EC;
+        -webkit-box-shadow: 10px 10px 24px #b2b8c9, -10px -10px 24px #f0f8ff;
+        box-shadow: 10px 10px 24px #b2b8c9, -10px -10px 24px #f0f8ff;
+      }
+      .kredit:hover{
+        color: darkslateblue !important;
+      }
+      #navigasi-atas{
+        color: darkslateblue !important;
+      }
+      code {
+        color: darkslateblue;
+      }
+      .biodata::-webkit-scrollbar{
+        display: none;
+      }
+      .desain::-webkit-scrollbar{
+        display: none;
+      }
+      .saya::-webkit-scrollbar{
+        display: none;
+      }
+      .fotografi::-webkit-scrollbar{
+        display: none;
+      }
+      .biodata, .fotografi, .saya, .desain{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .nav-link{
+        color: grey !important;
+      }
+      .nav-link.active {
+        color: darkslateblue !important;
+        background-color: white !important;
+      }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navigasi-atas" data-bs-offset="180" tabindex="0">
+<div class="jumbotron jumbotron-fluid text-center" style="background-color: #000;">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-md" style="height: 25vh; color: #fff;">
+      <p class="display-4 align-middle pt-5 mt-5"><code>Selamat</code> Datang di <i>Duniaku.</i></p>
+      <span>Memuat...</span>
+        <div class="spinner-border spinner-border-sm text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+  </div>
+  </div>
+</div>
+<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(209, 216, 236, 1)" offset="0%"></stop><stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,98L24,81.7C48,65,96,33,144,24.5C192,16,240,33,288,106.2C336,180,384,310,432,310.3C480,310,528,180,576,171.5C624,163,672,278,720,334.8C768,392,816,392,864,383.8C912,376,960,359,1008,326.7C1056,294,1104,245,1152,245C1200,245,1248,294,1296,269.5C1344,245,1392,147,1440,155.2C1488,163,1536,278,1584,343C1632,408,1680,425,1728,408.3C1776,392,1824,343,1872,294C1920,245,1968,196,2016,179.7C2064,163,2112,180,2160,187.8C2208,196,2256,196,2304,228.7C2352,261,2400,327,2448,294C2496,261,2544,131,2592,73.5C2640,16,2688,33,2736,32.7C2784,33,2832,16,2880,81.7C2928,147,2976,294,3024,334.8C3072,376,3120,310,3168,236.8C3216,163,3264,82,3312,114.3C3360,147,3408,294,3432,367.5L3456,441L3456,490L3432,490C3408,490,3360,490,3312,490C3264,490,3216,490,3168,490C3120,490,3072,490,3024,490C2976,490,2928,490,2880,490C2832,490,2784,490,2736,490C2688,490,2640,490,2592,490C2544,490,2496,490,2448,490C2400,490,2352,490,2304,490C2256,490,2208,490,2160,490C2112,490,2064,490,2016,490C1968,490,1920,490,1872,490C1824,490,1776,490,1728,490C1680,490,1632,490,1584,490C1536,490,1488,490,1440,490C1392,490,1344,490,1296,490C1248,490,1200,490,1152,490C1104,490,1056,490,1008,490C960,490,912,490,864,490C816,490,768,490,720,490C672,490,624,490,576,490C528,490,480,490,432,490C384,490,336,490,288,490C240,490,192,490,144,490C96,490,48,490,24,490L0,490Z"></path></svg>
+</div>
+
+<nav class="navbar fixed-bottom navbar-expand-md navbar-dark" style="background-color: #000;">
+    <div class="container">
+    <a class="navbar-brand" href="#">MonoNandha</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item dropup">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+          <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Menu 1</a>
+            <a class="dropdown-item" href="#">Menu 2</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex my-2 my-lg-0">
+        <input class="form-control me-sm-2" type="text" placeholder="Cari">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Cari</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="sticky-top border-bottom border-light border-5 rounded rounded-3" style="background-color: #D1D8EC;">
+  <div class="container container-fluid">
+    <div class="row">
+      <div class="navbar navbar-inverse" id="navigasi-atas">
+        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+          <ol class="breadcrumb pt-4">
+            <li class="breadcrumb-item active px-2 mx-2" aria-current="page"><p class="nav-atas" style="font-size: 2vh;">Beranda</p></li>
+            <li class="breadcrumb-item px-2 mx-2"><a href="" class="link-secondary"><p class="nav-atas" style="font-size: 2vh;">Menu 1</p></a></li>
+            <li class="breadcrumb-item px-2 mx-2"><a href="" class="link-secondary"><p class="nav-atas" style="font-size: 2vh;">Menu 2</p></a></li>
+          </ol>
+        </nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#saya">Tentang Saya</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#desain">Desain</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tambahan</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#fotografi">Fotografi</a></li>
+              <li><a class="dropdown-item" href="#keterampilan">Keterampilan</a></li>
+              <li><a class="dropdown-item" href="#kontak">Kontak</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+<div style="background-color: #D1D8EC;">
+<div class="container-fluid" style="background: #D1D8EC;">
+  <div class="row-cols-1 row-cols-sm-1 row">
+    <div class="col col-md-9 vh-300" style="color: darkslateblue;">
+    <div>
+    <div class="row vw-80 m-4 p-3 text-wrap overflow-auto saya" id="konten" style="height: 75vh;">
+    <div class="col mx-auto d-block text-center text-wrap pb-3" id="saya"><span class="display-6 text-center">Tentang Saya</span></div>
+                <div class="row justify-content-center fs-5 text-center mb-3 text-wrap">
+                    <div class="col-4 pe-1">
+                        <p>Perkenalan diri secara singkat dan jelas kepada orang lain agar orang lain mengerti dan paham tentang kita.</p>
+                    </div>
+                    <div class="col-4 pe-1">
+                        <p>Hobimu apanih, masukkin hobi kamu disini, suka hal apa dan gasuka hal apa, biar mereka lebih kenal dan tau tentang dirimu lebih dalem dan tau batasan dan hal apa yang bakal dilakuin ke kamu. Kalo aku suka Desain & Fotografi.</p>
+                    </div>
+                    <div class="col-4 pe-1">
+                        <p>Jelasin apa yang lagi kamu kerjain sekarang, bisa projek kecil-kecilan, lagi kerja apa, belajar apa, atau mungkin lagi mengemban akademik apa. jelasin tanggung-jawab kamu. Sekarang ini aku lagi ngerjain projek pemrograman web.</p>
+                    </div>
+                </div>
+    </div>
+    </div>
+    <div class="album">
+    <div class="row vh-100 vw-80 m-4 p-3 overflow-auto desain" id="konten">
+      <div class="row mx-auto d-block text-center text-wrap pb-3" id="desain"><span class="display-6 text-center">Desain</span></div>
+      <div class="row row-cols-md-2 row-cols-lg-3 g-3 overflow-auto">
+      <div class="col-4">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <nav aria-label="nav-halaman">
+  <ul class="pagination justify-content-center pt-3">
+    <li class="page-item disabled">
+      <a class="page-link">
+      <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+      <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+    <div class="row vh-100 vw-80 m-4 p-3 g-3 overflow-auto fotografi" id="konten">
+    <div class="row mx-auto d-block text-center text-wrap mb-5" id="fotografi"><span class="display-6 text-center">Fotografi</span></div>
+    <div class="row row-cols-sm-2 row-cols-md-3 g-3 overflow-auto fotografi">
+    <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"></text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex align-items-end">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="row row-cols-1 vh-100 vw-80 m-4 p-3" id="konten">
+      <div class="col" id="keterampilan">
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade h-75" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <svg class="bd-placeholder-img" width="100%" height="575px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Slide Pertama</h5>
+        <p>Penjelasan Singkat yang merepresentasikan slide pertama.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+    <svg class="bd-placeholder-img" width="100%" height="575px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Slide Kedua</h5>
+        <p>Penjelasan Singkat yang merepresentasikan slide kedua.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+    <svg class="bd-placeholder-img" width="100%" height="575px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Slide Ketiga</h5>ketiga
+        <p>Penjelasan Singkat yang merepresentasikan slide pertama.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="row mx-auto d-block text-center text-wrap mb-5 pt-3"><span class="display-6 text-center">Keterampilan</span></div>
+    </div>
+  </div>
+    <div class="col col-md-3 p-2">
+      <div class="row m-4 p-3 overflow-auto biodata" id="samping" style="height: 75vh;">
+        <div class="row mx-auto d-block text-center text-wrap">
+          <img src="Anan.jpg" alt="Muhammad Anandha Fritama" class="rounded-circle img-thumbnail" style="width: 144px;"/>
+          <h1 class="fs-3"><code>Muhammad Anandha Fritama</code></h1>
+          <p class="fs-6">Mahasiswa | Universitas Negeri Malang</p>
+          <h5>Biodata Lainnya</h3>
+            <table class="table table-hover table-borderless table-responsive">
+                <tr>
+                  <th scope="row">Tempat Lahir</th>
+                  <td>Sukabumi, Jawa Barat</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tanggal Lahir</th>
+                  <td>24 Juni 2002</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jenis Kelamin</th>
+                  <td>Laki-Laki</td>
+                </tr>
+                <tr>
+                  <th scope="row">Golongan Darah</th>
+                  <td>B</td>
+                </tr>
+                  <tr>
+                  <th scope="row">Agama</th>
+                  <td>Islam</td>
+                </tr>
+            </table>
+          <p>Website ini dibuat oleh <a href="https://www.instagram.com/anandha_.24/" class="kredit text-muted" style="text-decoration: none;"> Muhammad Anandha Fritama</a></p>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,128L24,133.3C48,139,96,149,144,165.3C192,181,240,203,288,229.3C336,256,384,288,432,256C480,224,528,128,576,122.7C624,117,672,203,720,213.3C768,224,816,160,864,133.3C912,107,960,117,1008,138.7C1056,160,1104,192,1152,186.7C1200,181,1248,139,1296,106.7C1344,75,1392,53,1416,42.7L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+</div>
+
+<div style="background-color: #F3F4F5;">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-md px-5" style="height: 75vh;">
+    <div class="container" id="kontak">
+                <dix class="row text-center">
+                    <div class="col">
+                        <span class="display-5" style="color: darkslateblue;">Kontak <div class="spinner-grow spinner-grow-sm text-secondary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+</span>
+                    </div>
+                </dix>
+            </div>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+        <i class="bi bi-twitter" style="font-size: 24px;"></i>
+        </div>
+        <div>
+          <h2>Twitter</h2>
+          <p>Ayo kontak aku lewat Twitter, kita <i>chit-chat</i> disana. <i>Tweet</i> bareng ^_^</p>
+          <a href="https://twitter.com/anandha24" class="btn btn-secondary">
+            @anandha24
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+        <i class="bi bi-instagram" style="font-size: 24px;"></i>
+        </div>
+        <div>
+          <h2>Instagram</h2>
+          <p>Ayo kenalan sama aku di Instagram, Siapa tau menarik ^_^.</p>
+          <a href="https://www.instagram.com/anandha_.24/" class="btn btn-secondary">
+            @anandha_.24
+          </a>
+        </div>
+      </div>
+      <div class="col justify-content-end">
+      <h2>Kirim Pesan</h2>
+                <div class="col">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark mb-4">Kirim</button>
+                        <div class="alert alert-success d-flex align-items-center mb-4" id="myAlert" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
+                            <div>Pesan Berhasil terkirim</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
