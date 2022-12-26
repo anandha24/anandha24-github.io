@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+	<title>Sistem Pakar Diebetes Mellitus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<script type="text/javascript" src="tau-prolog.js"></script>
+  <style>
+    body{
+      background-size:cover ;
+    }
+  </style>
+</head>
+<body background="bg.jpg">
+
+  <nav class="navbar bg-success navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+       <b> Sistem Pakar Diebetes Melitus</b>
+      </a>
+    </div>
+  </nav>
+
+ <div class="container">
+ <div class="row justify-content-center">
+    <div class="col-md-4">
+      <label class="label-control mt-3" for="tinggi">Tinggi Badan :</label> <br>
+      <input class="form-control" type="number" name="tinggi" id="tinggi" onkeyup="count()">
+  
+      <label class="label-control mt-3" for="tinggi">Berat Badan :</label> <br>
+      <input class="form-control" type="number" name="" id="berat" onkeyup="count()">
+  
+      <label class="label-control mt-3" for="tinggi">Jenis Kelamin :</label> <br>
+      <select class="form-control" name="" id="jk" onchange="count()">
+        <option value="1">Laki-laki</option>
+        <option value="2">Perempuan</option>
+      </select>
+  
+      <label class="label-control mt-3" for="tinggi">Tingkat Aktivitas :</label> <br>
+      <select class="form-control" name="" id="aktifitas" onchange="count()">
+        <option value="1">Santai</option>
+        <option value="2">Sedikit Santai</option>
+        <option value="3">Normal</option>
+        <option value="4">Berat</option>
+      </select>
+  
+      <label class="label-control mt-3" for="tinggi">Tingkat Stress :</label> <br>
+      <select class="form-control" name="" id="stress" onchange="count()">
+        <option value="1">Tidak Stress</option>
+        <option value="2">Sedikit Stress</option>
+        <option value="3">Stress Medium</option>
+        <option value="4">Stress Berat</option>
+        <option value="5">Sangat Stress Berat</option>
+      </select>
+  
+      <div class="row justify-content-center">
+        <label class="label-control mt-3" for="tinggi">Umur :</label> <br>
+       <div class="col-6">
+        <input class="form-control" type="number" name="tinggi" id="umur" onkeyup="count()">
+  
+       </div>
+       <div class="col-6">
+        <button class="btn-success btn" onclick="count()">
+          Submit
+        </button>
+       </div>
+      </div> 
+   
+      <br>
+      <span class="mt-3">Energi/kalori yang dibutuhkan :</span><br>
+     <span class="badge text-bg-info" id="res"></span>
+    </div> 
+    <div class="col-md-8">
+      <img src="medicine.png" alt="" srcset="" width="600px">
+    </div> 
+ </div> 
+  
+ </div> 
+
+<script type="">
+  function count(){
+    
+    var res = document.getElementById('res');
+        var tinggi = document.getElementById('tinggi').value;
+        var berat = document.getElementById('berat').value;
+        var jk = document.getElementById('jk').value;
+        var aktifitas = document.getElementById('aktifitas').value;
+        var stress = document.getElementById('stress').value;
+        var umur = document.getElementById('umur').value;
+    var session = pl.create();
+        // Consult
+    session.consult("model.pl", {
+      success: function () {
+        // Query
+        session.query("energy("+tinggi+","+berat+","+jk+","+aktifitas+","+stress+","+umur+",X,Y).", {
+          success: function (goal) {
+            // Answers
+            session.answer({
+              success: function (answer) {
+                console.log(answer.lookup("X"));
+                var hasil = answer.lookup("X");
+                var hasil2 = answer.lookup("Y");
+                res.innerHTML = hasil +" - Tipe Diet "+ hasil2;
+              },
+              error: function (err) {
+                /* Uncaught error */
+              },
+              fail: function () {
+                /* Fail */
+              },
+              limit: function () {
+                /* Limit exceeded */
+              },
+            });
+          },
+          error: function (err) {
+            /* Error parsing goal */
+          },
+        });
+      },
+      error: function (err) {
+        /* Error parsing program */
+      },
+    });
+    }
+</script>
+
+    <!-- <script type="module">
+
+    
+        var res = document.getElementById('res');
+        var tinggi = document.getElementById('tinggi');
+    var session = pl.create();
+        // Consult
+    session.consult("prediksi-tipe-diet.pl", {
+      success: function () {
+        // Query
+        session.query("energy(170,69.8,1,2,2,80,X,Y).", {
+          success: function (goal) {
+            // Answers
+            session.answer({
+              success: function (answer) {
+                console.log(answer.lookup("X"));
+                var hasil = answer.lookup("X");
+                var hasil2 = answer.lookup("Y");
+                res.innerHTML = hasil +" - Tipe Diet "+ hasil2;
+              },
+              error: function (err) {
+                /* Uncaught error */
+              },
+              fail: function () {
+                /* Fail */
+              },
+              limit: function () {
+                /* Limit exceeded */
+              },
+            });
+          },
+          error: function (err) {
+            /* Error parsing goal */
+          },
+        });
+      },
+      error: function (err) {
+        /* Error parsing program */
+      },
+    });
+
+    </script> -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
